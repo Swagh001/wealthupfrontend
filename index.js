@@ -1,6 +1,6 @@
 let postData = async (PostingData) => {
     try{
-        const response = await fetch('http://localhost:8081/api/codes/use', {
+        const response = await fetch('https://wealthup-u0lp.onrender.com/api/codes/use', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ let postData = async (PostingData) => {
 
 let getdata=async()=>{
     try{
-        const response = await fetch('http://localhost:8081/api/codes');
+        const response = await fetch('https://wealthup-u0lp.onrender.com/api/codes');
 
         const json = await response.json();
         console.log(json);
